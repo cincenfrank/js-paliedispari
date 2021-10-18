@@ -13,7 +13,32 @@
 <body>
     <header></header>
     <main>
+        <div class="container">
+            <h1>Will it be even or odd?</h1>
+            <p>Here we are. Rules are simple. You pick a number and our AI wil pick a number in the same range. Can you
+                guess if the sum of the 2 numbers will be even or odd?</p>
+            <form>
+                <label for="number-select" class="form-label">Pick a number</label>
 
+                <select class="form-select mb-3" id="number-select">
+                </select>
+                <label for="number-type" class="form-label">Will the sum of the numbers be even or odd?</label>
+
+                <select class="form-select" id="number-type">
+                    <option value="odd">Odd</option>
+                    <option value="even">Even</option>
+                </select>
+                <div class="btn btn-info mt-5 w-100" id="play-btn">PLAY</div>
+            </form>
+            <div class="row justify-content-center mt-5 ">
+                <div class="card opacity-0" id="result-card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title"></h5>
+                        <p class="card-text">you choose 1, our AI chose 4, so the number was odd! Great job!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <footer></footer>
     <script src="js/dispari.js"></script>

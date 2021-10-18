@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>Pali e Dispari</title>
@@ -13,7 +13,39 @@
 <body>
     <header></header>
     <main>
+        <div class="container mt-5">
+            <h1>Palindrome words checker</h1>
+            <p>Do you only know how to read from left to right, so you can't check if a word is palindrome? We got you
+                covered!
+                insert the word you need to check in the following input field and press the "check" button!</p>
 
+            <form>
+                <div class="row">
+                    <div class="col-8">
+                        <label for="word-input" class="form-label">Word to check</label>
+                        <input type="text" class="form-control" id="word-input">
+                        <div class="invalid-feedback" id="word-input-feedback"></div>
+                        <div id="word-input-help" class="form-text">We value your privacy, so we are not going to share
+                            your
+                            palindrome words with the strong powers, pinky swear!</div>
+                    </div>
+                    <div class="col-4">
+                        <div class="btn btn-info w-100" id="word-check">CHECK</div>
+                    </div>
+                </div>
+
+            </form>
+
+            <div class="card mt-5 opacity-0" id="result-card">
+                <h5 class="card-header">Check Result</h5>
+                <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text">Alla grande! la parola xxx può essere letta sia da destra a sinistra che da
+                        sinistra a destra senza cambiare significato!</p>
+                    <div class="btn btn-primary" id="reset-btn">Reset</div>
+                </div>
+            </div>
+        </div>
     </main>
     <footer></footer>
     <script src="js/pali.js"></script>
